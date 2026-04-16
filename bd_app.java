@@ -1,6 +1,4 @@
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
+import javax.swing.*;
 
 public class bd_app 
 {
@@ -11,10 +9,15 @@ public class bd_app
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(600, 400);
 
-        frame.setLocationRelativeTo(null);
+        JTextArea textArea = new JTextArea();
 
-        JLabel label = new JLabel("Unload your thoughts here", SwingConstants.CENTER);
-        frame.add(label);
+        textArea.setLineWrap(true);
+        textArea.setWrapStyleWord(true);
+
+        JScrollPane scrollPane = new JScrollPane(textArea);
+        frame.add(scrollPane);
+
+        frame.setLocationRelativeTo(null);
 
         frame.setVisible(true);
     }
