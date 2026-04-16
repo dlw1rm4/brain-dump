@@ -11,3 +11,4 @@ This is a small project I wanted to make for myself after getting 3 Amazon edge 
 - There will be two files: .java and .class
 - No () in class
 - To have to actually run, I needed this entire thing in Target for shortcuts: `"C:\Program Files\oracleJdk-26\bin\javaw.exe" -jar "C:\github projects\brain-dump\BrainDump.jar"`
+- If there's an error message "no main manifest attribute...": `jar cfe BrainDump.jar bd_app *.class`
